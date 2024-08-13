@@ -2,11 +2,12 @@
 <html>
     <head>
         <title>Jesus's Blog</title>
+        <meta charset="UTF-8">
     </head>
     <body>
         <header>
             <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Jesus's Random Thoughts</a></h1>
-            <h3><em>*Note that these are my thoughts so if you are offended, then you are welcome to leave.</em></h3>
+            <h6><em>*Note that these are my thoughts so if you are offended, then you are welcome to leave.</em></h3>
         </header>
 
         <article>
@@ -17,7 +18,7 @@
                 The issue was that I did not understand the songs as I do now. These songs are so fucking fire.
                 Nothing but straight bangers, and alot of this has to do with Spanish being such a good language.
                 It feels like emotions are conveyed better and with much deeper feelings. Like I will hear a heartbreak or sad song 
-                and just feel it much more than I would if the song was in English. Anyways here is a list of Spanish songs that I love
+                and just feel it much more than I would if the song was in English. Anyway here is a list of Spanish songs that I love
                 listening to at the moment in no particular order.
             </p>
             <div>
@@ -35,5 +36,13 @@
                 </ul>
             </div>
         </article>
+
+        {% for post in posts %}
+            <article>
+                <time>published: {{ post.published_date }}</time>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </article>
+        {% endfor %}
     </body>
 </html>
