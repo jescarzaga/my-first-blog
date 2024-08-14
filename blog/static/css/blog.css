@@ -1,0 +1,86 @@
+h1 a, h2 a {
+    color: #843a3a;
+    font-family: 'Lobster';
+}
+
+.special_title {
+    color: #000000;
+    font-family: 'Lobster';
+    
+}
+
+#fdate {
+    float: right;
+    color: #720000;
+}
+
+body {
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.page-header {
+    background-color: #ffc59c;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.date {
+    color: gray;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea,
+.post-form input {
+    width: 100%;
+}
+
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h2 a,
+.post h2 a:visited {
+    color: #000000;
+}
+
+.post > .date,
+.post > .actions {
+    float: right;
+    color: #720000;
+}
+
+.btn-secondary,
+.btn-secondary:visited {
+    color: #ffc59c;
+    background: none;
+    border-color: #ffc59c;
+}
+
+.btn-secondary:hover {
+    color: #FFFFFF;
+    background-color: #ffc59c;
+}
